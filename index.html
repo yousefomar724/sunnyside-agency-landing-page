@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="logo"><img src="images/logo.svg" alt=""></a>
+
+      <div class="menu__toggle">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+
+      <div class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#about" class="menu__link">About</a>
+          </li>
+          <li class="menu__item">
+            <a href="#services" class="menu__link">Services</a>
+          </li>
+          <li class="menu__item">
+            <a href="#projects" class="menu__link">Projects</a>
+          </li>
+          <li class="menu__item">
+            <a href="#contact" class="menu__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!--HERO-->
+    <section class="hero">
+      <div class="hero__img" alt=""></div>
+      
+      <div class="hero__content">
+        <h2 class="hero__title">We are creatives</h2>
+        <div class="arrowDown-img">
+          <a href="#about"><img src="images/icon-arrow-down.svg" alt=""></a>
+        </div>
+      </div>
+    </section>
+
+    <!--TRANSFORM-->
+    <section class="transform" id="about">
+      <div class="transform__img" alt=""></div>
+
+      <div class="transform__content content">
+        <h2 class="transform__title title">
+          Transform your brand
+        </h2>
+        <p class="transform__description desc">
+          We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+  
+        <a href="#" class="transform__link link">Learn more</a>
+      </div>
+    </section>
+
+    <!--STAND OUT-->
+    <section class="standout">
+      <div class="standout__img" alt=""></div>
+      <div class="standout__content content">
+        <h2 class="standout__title title">
+          Stand out to the right audience
+        </h2>
+        <p class="standout__description desc">
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+        </p>
+
+        <a href="#" class="standout__link link">Learn more</a>
+      </div>
+    </section>
+
+    <section class="design__container">
+      <!--GRAPHIC DESIGN-->
+      <div class="graphic section" id="services">
+        <div class="graphic__img main-img"></div>
+
+        <div class="graphic__content fruit">
+          <h2 class="graphic__title prim__title">
+            Graphic Design
+          </h2>
+          <div class="graphic__description prim__desc">
+            Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+          </div>
+        </div>
+      </div>
+      <!-- PHOTOGRAPHY -->
+      <div class="photo section">
+        <div class="photo__img main-img"></div>
+        
+        <div class="photo__content fruit">
+          <h2 class="photo__title prim__title">
+            Photography
+          </h2>
+          <div class="photo__description prim__desc">
+            Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--TESTIMONIALS-->
+    <section class="testimonial">
+      <h3 class="testimonial__title">
+        Client testimonials
+      </h3>
+      <div class="testimonial__content">
+        <div class="testimonial__card">
+          <div class="test__img">
+            <img src="images/image-emily.jpg" alt="">
+          </div>
+          <p class="test__desc">
+            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+          </p>
+          <h4 class="test__subtitle">Emily R.</h4>
+          <span class="test__job">Marketing Director</span>
+        </div>
+
+        <div class="testimonial__card">
+          <div class="test__img">
+            <img src="images/image-thomas.jpg" alt="">
+          </div>
+          <p class="test__desc">
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <h4 class="test__subtitle">Thomas S.</h4>
+          <span class="test__job">Chief Operating Officer</span>
+        </div>
+
+        <div class="testimonial__card">
+          <div class="test__img">
+            <img src="images/image-jennie.jpg" alt="">
+          </div>
+          <p class="test__desc">
+            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </p>
+          <h4 class="test__subtitle">Jennie F.</h4>
+          <span class="test__job">Business Owner</span>
+        </div>
+      </div>
+    </section>
+
+    <!--CREATIVE-->
+    <section class="creative" id="projects">
+      <div class="creative__container">
+        <img class="creative__img" src="images/mobile/image-gallery-milkbottles.jpg" alt="">
+        <img class="creative__img" src="images/mobile/image-gallery-orange.jpg" alt="">
+        <img class="creative__img" src="images/mobile/image-gallery-cone.jpg" alt="">
+        <img class="creative__img" src="images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+      </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <h3 class="footer__title">
+        sunnyside
+      </h3>
+
+      <div class="footer__menu">
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#about" class="footer__link">About</a></li>
+          <li class="footer__item"><a href="#services" class="footer__link">Services</a></li>
+          <li class="footer__item"><a href="#projects" class="footer__link">Projects</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__social">
+        <div class="footer__social-container">
+          <img src="images/icon-facebook.svg" alt="">
+          <img src="images/icon-instagram.svg" alt="">
+          <img src="images/icon-twitter.svg" alt="">
+          <img src="images/icon-pinterest.svg" alt="">
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Yousef Omar</a>.
+      </div>
+    </footer>
+  </main>
+
+  <!--ion icons-->
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+
+  <!--JS-->
+  <script src="main.js"></script>
+</body>
+</html>
