@@ -1,6 +1,6 @@
 # Frontend Mentor - Sunnyside agency landing page solution
 
-This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef).
 
 ## Table of contents
 
@@ -14,9 +14,6 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -31,18 +28,18 @@ Users should be able to:
 
 ### Screenshot
 
-![Screen Shot](images\screenshot.png)
+![Screen Shot](sunnyside-agency-landing-page-main\sunnyside-agency-landing-page-main\sunnyside-agency-landing-page\images\screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/yousefomar724/sunnyside-agency-landing-page](https://github.com/yousefomar724/sunnyside-agency-landing-page)
+- Live Site URL: [https://sunny-side-landing-page.netlify.app/](https://sunny-side-landing-page.netlify.app/)
 
 ## My process
 
- - Start with planning the project and its layouts.
- - Then structure the HTML file with all extrnal files that I need.
- - construct CSS main variables, base properties
+ -Start with planning the project and the layouts
+ -Then structure the HTML file and adding all extrnal files that I need
+ -Construct CSS main variables and base properties
 
 ### Built with
 
@@ -55,53 +52,48 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+Using semantic HTML tags with appropriate class names
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<section class="hero">
+      <div class="hero__content">
+        <h2 class="hero__title">We are creatives</h2>
 ```
 
+Implementing best practices and modern Css layouts
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.creative__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 ```
 
+Accessing HTML with Javascript and minipulate it to control the menu
+
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+// Toggle Menu
+const menuToggle = document.querySelector('.menu__toggle');
+menuToggle.addEventListener('click', ()=>{
+    menu.classList.toggle('show-menu');
+});
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Areas that I want to continue focusing on in future projects:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- Improve the layouts with the modern CSS
+- Add some feature with Javascript like scrollup button or night mode
+- Bring some movement in tha landing page by animations
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) - This helped me understand the grid system very well. I really liked this article and will read it again.
+- [CSS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This is an amazing article which helped me finally understand flexbox. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Yousef Omar](https://portofolio-yousef-omar.netlify.app/)
+- Frontend Mentor - [@yousefomar724](https://www.frontendmentor.io/profile/yousefomar724)
+- Linkedin - [@yousef omar](https://www.linkedin.com/in/yousef-omar-556354123/)
