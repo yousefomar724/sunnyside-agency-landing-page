@@ -73,6 +73,9 @@ img{
     max-width: 1023px;
     margin: 0 1rem;
 }
+.logo{
+    cursor: pointer;
+}
 .menu__toggle{
     font-size: 2rem;
     color: var(--white);
@@ -242,13 +245,16 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: max-content;
     align-items: center;
+    gap: 2rem;
     padding: 3rem 1rem;
     text-align: center;
 }
 .title{
     font-family: var(--secondary-ff);
     font-size: 2.5rem;
+    padding: 0 1rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -284,7 +290,7 @@ img{
 }
 
 /* Tablet View */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 660px){
     .transform,
     .standout{
         display: grid;
@@ -297,6 +303,10 @@ img{
     .standout__img{
         background-image: url(images/desktop/image-stand-out.jpg);
     }
+    .transform__img,
+    .standout__img{
+        height: auto;
+    }
     .transform__img{
         grid-column: 2;
     }
@@ -304,10 +314,13 @@ img{
         text-align: initial;
         padding: 3rem 4rem;
         align-items: flex-start;
+        align-self: center;
+        gap: 1rem;
     }
     .title{
         font-size: 2rem;
         margin-bottom: 1rem;
+        padding: 0;
     }
     .desc{
         padding: 0;
@@ -325,7 +338,8 @@ img{
 /* Desktop View */
 @media screen and (min-width: 1024px){
     .content{
-        padding: 5rem 7rem;
+        padding: 7rem;
+        gap: 1.5rem;
     }
 }
 
@@ -395,21 +409,20 @@ img{
         flex-direction: row;
         justify-content: center;
     }
-    .section{
-        height: 550px;
-    }
     .graphic__img{
         background-image: url(images/desktop/image-graphic-design.jpg);
     }
     .photo__img{
         background-image: url(images/desktop/image-photography.jpg);
-    }
-    .main-img{
-        height: 550px;
+    } 
+}
+@media screen and (min-width: 1024px){
+    .prim__desc{
+        padding: 0 6rem;
     }
 }
 
-/* Testimonials */
+/*-- TESTIMONIALS --*/
 .testimonial{
     padding: 3.5rem 0;
 }
@@ -445,13 +458,13 @@ img{
     border-radius: 50%;
 }
 .test__desc{
-    color: var(--dark-blue);
+    color: var(--dark-grayish-blue);
     padding: .5rem 2rem 0 2rem;
 }
 .test__subtitle{
     font-weight: 700;
     font-family: var(--secondary-ff);
-    margin: 2rem 0 .5rem 0;
+    margin: 2rem 0 0 0;
 }
 .test__job{
     color: var(--grayish-blue);
@@ -459,7 +472,19 @@ img{
     font-size: .8rem;
 }
 
-/* Creative */
+@media screen and (min-width: 1024px){
+    .testimonial{
+        padding: 6rem 0 4rem 0;
+    }
+    .testimonial__title{
+        margin-bottom: 5rem;
+    }
+    .testimonial__card{
+        gap: 1.5rem;
+    }
+}
+
+/*-- CREATIVE --*/
 .creative__container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -515,4 +540,6 @@ img{
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+    color: var(--dark-blue);
+    font-weight: bold;
 }

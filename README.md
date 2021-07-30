@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screen Shot](sunnyside-agency-landing-page-main\sunnyside-agency-landing-page-main\sunnyside-agency-landing-page\images\screenshot.png)
+![Screen Shot](images\screenshot.png)
 
 ### Links
 
